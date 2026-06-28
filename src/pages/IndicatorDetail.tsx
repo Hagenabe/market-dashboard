@@ -4,7 +4,7 @@ import {
   ResponsiveContainer, ComposedChart, Line, XAxis, YAxis,
   Tooltip, CartesianGrid, Legend
 } from 'recharts'
-import { format, subMonths, subYears, parseISO } from 'date-fns'
+import { format, subMonths, subYears } from 'date-fns'
 import type { MarketData, IndicatorHistory } from '../types'
 import { fmtValue, fmtPct, colorClass, calcVolatility } from '../utils/format'
 import { withMovingAverages } from '../utils/ma'

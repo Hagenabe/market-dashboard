@@ -121,7 +121,6 @@ function generateBullets(byId: Record<string, Indicator>): Bullet[] {
 
   // Rates
   const us10 = byId['us10y']
-  const us2  = byId['us2y']
   const spread = byId['spread_10_2']
   if (us10) {
     const dir = us10.change > 0 ? '上昇' : '低下'
