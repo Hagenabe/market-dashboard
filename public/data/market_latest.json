@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T09:09:38+09:00",
+  "updated_at": "2026-07-06T09:09:55+09:00",
   "indicators": [
     {
       "id": "us10y",
@@ -12,7 +12,7 @@
       "change": 0.04,
       "change_pct": 0.9,
       "week_pct": 2.28,
-      "month_pct": -0.22,
+      "month_pct": -1.54,
       "history": [
         {
           "date": "2026-05-19",
@@ -146,8 +146,8 @@
       "value": 4.17,
       "change": 0.03,
       "change_pct": 0.72,
-      "week_pct": 2.46,
-      "month_pct": 2.21,
+      "week_pct": 1.71,
+      "month_pct": 0.0,
       "history": [
         {
           "date": "2026-05-19",
