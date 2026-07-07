@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T09:09:55+09:00",
+  "updated_at": "2026-07-07T09:11:30+09:00",
   "indicators": [
     {
       "id": "us10y",
@@ -8,16 +8,12 @@
       "category": "rates",
       "unit": "%",
       "description": "米国長期金利の基準。株式・為替・コモディティすべてに影響。",
-      "value": 4.48,
-      "change": 0.04,
-      "change_pct": 0.9,
-      "week_pct": 2.28,
-      "month_pct": -1.54,
+      "value": 4.49,
+      "change": 0.01,
+      "change_pct": 0.22,
+      "week_pct": 1.13,
+      "month_pct": -1.32,
       "history": [
-        {
-          "date": "2026-05-19",
-          "close": 4.67
-        },
         {
           "date": "2026-05-20",
           "close": 4.57
@@ -133,6 +129,10 @@
         {
           "date": "2026-07-01",
           "close": 4.48
+        },
+        {
+          "date": "2026-07-02",
+          "close": 4.49
         }
       ]
     },
@@ -143,16 +143,12 @@
       "category": "rates",
       "unit": "%",
       "description": "FRBの政策金利期待を最も反映する指標。",
-      "value": 4.17,
-      "change": 0.03,
-      "change_pct": 0.72,
-      "week_pct": 1.71,
-      "month_pct": 0.0,
+      "value": 4.14,
+      "change": -0.03,
+      "change_pct": -0.72,
+      "week_pct": 0.0,
+      "month_pct": -0.72,
       "history": [
-        {
-          "date": "2026-05-19",
-          "close": 4.13
-        },
         {
           "date": "2026-05-20",
           "close": 4.04
@@ -268,6 +264,10 @@
         {
           "date": "2026-07-01",
           "close": 4.17
+        },
+        {
+          "date": "2026-07-02",
+          "close": 4.14
         }
       ]
     },
@@ -412,9 +412,9 @@
       "name_ja": "米10年-2年スプレッド",
       "category": "rates",
       "unit": "%",
-      "value": 0.31,
-      "change": 0.01,
-      "change_pct": 0.01,
+      "value": 0.35,
+      "change": 0.04,
+      "change_pct": 0.04,
       "week_pct": 0.0,
       "month_pct": 0.0,
       "history": [],
