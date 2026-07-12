@@ -179,19 +179,39 @@ def main():
     print("=== Market Data Fetch ===")
     print(f"Time: {datetime.now(JST).strftime('%Y-%m-%d %H:%M:%S JST')}\n")
 
-    indicators: list[dict] = []
+    # 既存データを読み込んでフォールバック用に保持
+    existing_by_id: dict[str, dict] = {}
+    if OUT_LATEST.exists():
+        try:
+            existing = json.loads(OUT_LATEST.read_text())
+            existing_by_id = {ind["id"]: ind for ind in existing.get("indicators", [])}
+            print(f"[Existing] {len(existing_by_id)} indicators loaded as fallback\n")
+        except Exception:
+            pass
+
+    fresh: dict[str, dict] = {}
 
     print("[Yahoo Finance]")
     for defn in YAHOO_INDICATORS:
         result = fetch_yahoo(defn)
         if result:
-            indicators.append(result)
+            fresh[result["id"]] = result
 
     print("\n[FRED]")
     fred_results = fetch_fred_all(FRED_INDICATORS)
     for r in fred_results:
         if r:
-            indicators.append(r)
+            fresh[r["id"]] = r
+
+    # 取得できなかった指標は既存データで補完
+    all_ids = [d["id"] for d in YAHOO_INDICATORS] + [d["id"] for d in FRED_INDICATORS]
+    indicators: list[dict] = []
+    for ind_id in all_ids:
+        if ind_id in fresh:
+            indicators.append(fresh[ind_id])
+        elif ind_id in existing_by_id:
+            print(f"  ⚠ {ind_id}: fetch failed — using existing data")
+            indicators.append(existing_by_id[ind_id])
 
     # Add computed spread (10Y - 2Y)
     us10y = next((i for i in indicators if i["id"] == "us10y"), None)
@@ -207,7 +227,7 @@ def main():
             "unit": "%",
             "value": spread,
             "change": round(spread - prev_spread, 4),
-            "change_pct": round(spread - prev_spread, 4),  # bp change
+            "change_pct": round(spread - prev_spread, 4),
             "week_pct": 0.0,
             "month_pct": 0.0,
             "history": [],
@@ -215,7 +235,7 @@ def main():
         })
 
     if not indicators:
-        print("\nNo data fetched. Check your network or API keys.")
+        print("\nNo data fetched at all. Check your network or API keys.")
         sys.exit(1)
 
     # Strip _full_history before writing market_latest.json
@@ -227,14 +247,17 @@ def main():
             hist_path = OUT_HISTORY / f"{ind['id']}.json"
             hist_path.write_text(json.dumps({"id": ind["id"], "history": full}, ensure_ascii=False, indent=2))
 
+    fresh_count = len([i for i in out_inds if i["id"] in fresh])
+    fallback_count = len(out_inds) - fresh_count
+
     payload = {
         "updated_at": datetime.now(JST).strftime("%Y-%m-%dT%H:%M:%S+09:00"),
         "indicators": out_inds,
     }
 
     OUT_LATEST.write_text(json.dumps(payload, ensure_ascii=False, indent=2))
-    print(f"\n✓ {OUT_LATEST}  ({len(out_inds)} indicators)")
-    print(f"✓ history/ files updated")
+    print(f"\n✓ {OUT_LATEST}")
+    print(f"  fresh: {fresh_count}  fallback: {fallback_count}  total: {len(out_inds)}")
 
 if __name__ == "__main__":
     main()
