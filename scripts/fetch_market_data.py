@@ -86,7 +86,12 @@ def calc_pct(current: float, past: float | None) -> float:
 
 def find_n_days_ago(series: pd.Series, n: int) -> float | None:
     """Return the close value approx n calendar days ago."""
-    cutoff = pd.Timestamp.now() - pd.Timedelta(days=n)
+    cutoff = pd.Timestamp.now(tz='UTC') - pd.Timedelta(days=n)
+    # seriesのインデックスがタイムゾーン付きの場合は合わせる
+    if series.index.tz is not None:
+        cutoff = cutoff.tz_convert(series.index.tz)
+    else:
+        cutoff = cutoff.tz_localize(None)
     past = series[series.index <= cutoff]
     if past.empty:
         return None
