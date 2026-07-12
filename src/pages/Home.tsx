@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { format } from 'date-fns'
 import type { MarketData, Category, DayComment } from '../types'
 import { CategorySection } from '../components/CategorySection'
 import { CorrelationPanel } from '../components/CorrelationPanel'
 import { MemoEditor } from '../components/MemoEditor'
 import { MarketSummary } from '../components/MarketSummary'
+import { SectorView } from '../components/SectorView'
 import { fmtPct, colorClass } from '../utils/format'
 
 const CATEGORY_ORDER: Category[] = ['equity', 'rates', 'fx', 'commodity', 'risk', 'energy']
@@ -15,6 +17,7 @@ const NAV_LABELS: Record<Category, string> = {
 }
 
 export function Home() {
+  const navigate = useNavigate()
   const [data, setData] = useState<MarketData | null>(null)
   const [comment, setComment] = useState<DayComment | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -65,6 +68,12 @@ export function Home() {
                 <MarketPulse indicators={data.indicators} />
               </>
             )}
+            <button
+              onClick={() => navigate('/portfolio')}
+              className="text-xs font-mono px-3 py-1.5 rounded-lg bg-surface-card border border-surface-border text-slate-300 hover:border-slate-500 transition-colors"
+            >
+              📊 ポートフォリオ
+            </button>
           </div>
         </div>
         {/* Mobile category nav — horizontally scrollable */}
@@ -96,6 +105,9 @@ export function Home() {
             indicators={data.indicators.filter(i => i.category === cat)}
           />
         ))}
+
+        {/* Sector view */}
+        <SectorView />
 
         {/* Relations */}
         {data && <CorrelationPanel indicators={data.indicators} />}

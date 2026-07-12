@@ -17,6 +17,7 @@ import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import yfinance as yf
 from dotenv import load_dotenv
@@ -24,8 +25,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 BASE_DIR = Path(__file__).parent.parent
-OUT_LATEST  = BASE_DIR / "public" / "data" / "market_latest.json"
-OUT_HISTORY = BASE_DIR / "public" / "data" / "history"
+OUT_LATEST       = BASE_DIR / "public" / "data" / "market_latest.json"
+OUT_HISTORY      = BASE_DIR / "public" / "data" / "history"
+OUT_PORTFOLIO    = BASE_DIR / "public" / "data" / "portfolio_latest.json"
+OUT_SECTOR       = BASE_DIR / "public" / "data" / "sector_latest.json"
+OUT_CORRELATIONS = BASE_DIR / "public" / "data" / "correlations.json"
 OUT_HISTORY.mkdir(parents=True, exist_ok=True)
 
 JST = timezone(timedelta(hours=9))
@@ -55,6 +59,47 @@ YAHOO_INDICATORS = [
     # Risk
     dict(id="vix",      name="VIX",            name_ja="VIX 恐怖指数",   category="risk",      ticker="^VIX",
          description="S&P500オプションの30日間予想変動率。20以上で警戒、30以上で高恐怖域。"),
+]
+
+# ── 保有銘柄 ──────────────────────────────────────────────────────────────────
+
+PORTFOLIO_STOCKS = [
+    dict(id="inpex",    name="INPEX",              name_ja="INPEX",              ticker="1605.T", sector="エネルギー",
+         macro_pairs=["wti", "brent"],
+         description="原油・天然ガス開発。WTI/ブレント原油と強く連動する傾向。"),
+    dict(id="nintendo", name="Nintendo",            name_ja="任天堂",             ticker="7974.T", sector="ゲーム・娯楽",
+         macro_pairs=["usdjpy", "nasdaq100"],
+         description="海外売上比率が高くドル円の影響を受けやすい。NASDAQ100との連動も参考に。"),
+    dict(id="shift",    name="SHIFT",               name_ja="SHIFT",              ticker="3697.T", sector="IT・ソフトウェア",
+         macro_pairs=["us10y", "nasdaq100"],
+         description="グロース株。米長期金利上昇局面でバリュエーション圧縮リスクあり。"),
+    dict(id="nsc",      name="Nippon Steel",        name_ja="日本製鉄",           ticker="5401.T", sector="素材・鉄鋼",
+         macro_pairs=["wti", "usdjpy"],
+         description="素材・景気敏感株。中国需要・原材料費・ドル円が業績に影響。"),
+    dict(id="mitsui",   name="Mitsui & Co.",        name_ja="三井物産",           ticker="8031.T", sector="商社",
+         macro_pairs=["wti", "gold"],
+         description="総合商社。コモディティ全般（資源・エネルギー・金属）と連動。"),
+    dict(id="gmo_pg",   name="GMO Payment Gateway", name_ja="GMOペイメントGW",    ticker="3769.T", sector="フィンテック",
+         macro_pairs=["us10y", "nasdaq100"],
+         description="グロース・フィンテック株。金利敏感。NASDAQ100との連動を確認。"),
+    dict(id="sanix",    name="Sanix HD",            name_ja="サニックスHD",       ticker="4651.T", sector="環境・エネルギー",
+         macro_pairs=["natgas", "wti"],
+         description="太陽光・環境事業。エネルギー価格と再エネ普及速度が業績に影響。"),
+]
+
+# ── 業種代表株（買い時判断用） ─────────────────────────────────────────────────
+
+SECTOR_STOCKS = [
+    dict(id="sec_energy",   name="エネルギー",     ticker="1605.T",  sector_ja="エネルギー",    topix_beta=1.2),
+    dict(id="sec_material", name="素材・鉄鋼",     ticker="5401.T",  sector_ja="素材・鉄鋼",    topix_beta=1.3),
+    dict(id="sec_auto",     name="輸送機器",        ticker="7203.T",  sector_ja="自動車",        topix_beta=1.1),
+    dict(id="sec_elec",     name="電気機器",        ticker="6758.T",  sector_ja="電気機器",      topix_beta=1.2),
+    dict(id="sec_finance",  name="銀行・金融",      ticker="8306.T",  sector_ja="金融",          topix_beta=1.0),
+    dict(id="sec_trading",  name="商社",            ticker="8058.T",  sector_ja="商社",          topix_beta=1.1),
+    dict(id="sec_pharma",   name="医薬品",          ticker="4502.T",  sector_ja="医薬品",        topix_beta=0.7),
+    dict(id="sec_realestate",name="不動産",         ticker="8801.T",  sector_ja="不動産",        topix_beta=0.9),
+    dict(id="sec_retail",   name="小売・消費",      ticker="3382.T",  sector_ja="小売",          topix_beta=0.8),
+    dict(id="sec_it",       name="情報・通信",      ticker="9984.T",  sector_ja="IT・通信",      topix_beta=1.3),
 ]
 
 FRED_INDICATORS = [
@@ -263,6 +308,123 @@ def main():
     OUT_LATEST.write_text(json.dumps(payload, ensure_ascii=False, indent=2))
     print(f"\n✓ {OUT_LATEST}")
     print(f"  fresh: {fresh_count}  fallback: {fallback_count}  total: {len(out_inds)}")
+
+    # ── 保有株 ────────────────────────────────────────────────────────────────
+    print("\n[Portfolio Stocks]")
+    portfolio_inds = []
+    portfolio_history: dict[str, pd.Series] = {}
+    for defn in PORTFOLIO_STOCKS:
+        result = fetch_yahoo({**defn, "category": "portfolio"})
+        if result:
+            full = result.pop("_full_history", None)
+            portfolio_inds.append(result)
+            if full:
+                closes = pd.Series(
+                    [p["close"] for p in full],
+                    index=pd.to_datetime([p["date"] for p in full])
+                )
+                portfolio_history[defn["id"]] = closes
+                hist_path = OUT_HISTORY / f"{defn['id']}.json"
+                hist_path.write_text(json.dumps({"id": defn["id"], "history": full}, ensure_ascii=False, indent=2))
+
+    portfolio_payload = {
+        "updated_at": datetime.now(JST).strftime("%Y-%m-%dT%H:%M:%S+09:00"),
+        "stocks": portfolio_inds,
+    }
+    OUT_PORTFOLIO.write_text(json.dumps(portfolio_payload, ensure_ascii=False, indent=2))
+    print(f"✓ {OUT_PORTFOLIO}  ({len(portfolio_inds)} stocks)")
+
+    # ── 業種代表株 ────────────────────────────────────────────────────────────
+    print("\n[Sector Stocks]")
+    sector_inds = []
+    sector_history: dict[str, pd.Series] = {}
+    topix_series: pd.Series | None = None
+    for defn in SECTOR_STOCKS:
+        result = fetch_yahoo({**defn, "name_ja": defn["name"], "category": "sector",
+                              "id": defn["id"], "name": defn["name"]})
+        if result:
+            full = result.pop("_full_history", None)
+            sector_inds.append({**result, "sector_ja": defn["sector_ja"]})
+            if full:
+                closes = pd.Series(
+                    [p["close"] for p in full],
+                    index=pd.to_datetime([p["date"] for p in full])
+                )
+                sector_history[defn["id"]] = closes
+                if defn["id"] == "sec_auto":  # TOPIXの代わりにトヨタで正規化テスト
+                    pass
+
+    # TOPIXをベンチマークとして取得（既取得のものを流用）
+    topix_ind = next((i for i in indicators if i["id"] == "topix"), None)
+    if topix_ind:
+        topix_hist_path = OUT_HISTORY / "topix.json"
+        if topix_hist_path.exists():
+            topix_data = json.loads(topix_hist_path.read_text())
+            topix_series = pd.Series(
+                [p["close"] for p in topix_data["history"]],
+                index=pd.to_datetime([p["date"] for p in topix_data["history"]])
+            )
+
+    # 各業種の対TOPIX相対パフォーマンスを計算
+    for s in sector_inds:
+        sid = s["id"]
+        if sid in sector_history and topix_series is not None:
+            sc = sector_history[sid]
+            tp = topix_series
+            aligned = pd.DataFrame({"sector": sc, "topix": tp}).dropna()
+            if len(aligned) >= 20:
+                month_ago = aligned.index[-1] - pd.Timedelta(days=30)
+                year_ago  = aligned.index[-1] - pd.Timedelta(days=365)
+                for label, cutoff in [("relative_1m", month_ago), ("relative_1y", year_ago)]:
+                    sub = aligned[aligned.index >= cutoff]
+                    if len(sub) >= 2:
+                        sec_ret = (sub["sector"].iloc[-1] / sub["sector"].iloc[0] - 1) * 100
+                        top_ret = (sub["topix"].iloc[-1]  / sub["topix"].iloc[0]  - 1) * 100
+                        s[label] = round(sec_ret - top_ret, 2)
+
+    sector_payload = {
+        "updated_at": datetime.now(JST).strftime("%Y-%m-%dT%H:%M:%S+09:00"),
+        "sectors": sector_inds,
+    }
+    OUT_SECTOR.write_text(json.dumps(sector_payload, ensure_ascii=False, indent=2))
+    print(f"✓ {OUT_SECTOR}  ({len(sector_inds)} sectors)")
+
+    # ── 相関行列 ──────────────────────────────────────────────────────────────
+    print("\n[Correlation Matrix]")
+    macro_ids = ["wti", "us10y", "usdjpy", "gold", "nikkei", "nasdaq100"]
+    macro_series: dict[str, pd.Series] = {}
+
+    for mid in macro_ids:
+        hist_path = OUT_HISTORY / f"{mid}.json"
+        if hist_path.exists():
+            data = json.loads(hist_path.read_text())
+            macro_series[mid] = pd.Series(
+                [p["close"] for p in data["history"]],
+                index=pd.to_datetime([p["date"] for p in data["history"]])
+            )
+
+    corr_matrix: dict[str, dict[str, float | None]] = {}
+    for pid, pseries in portfolio_history.items():
+        corr_matrix[pid] = {}
+        for mid, mseries in macro_series.items():
+            aligned = pd.DataFrame({"p": pseries, "m": mseries}).dropna()
+            if len(aligned) >= 60:
+                # 日次リターンで相関を計算（水準ではなく変化率）
+                p_ret = aligned["p"].pct_change().dropna()
+                m_ret = aligned["m"].pct_change().dropna()
+                corr = p_ret.corr(m_ret)
+                corr_matrix[pid][mid] = round(float(corr), 3) if not np.isnan(corr) else None
+            else:
+                corr_matrix[pid][mid] = None
+
+    corr_payload = {
+        "updated_at": datetime.now(JST).strftime("%Y-%m-%dT%H:%M:%S+09:00"),
+        "portfolio_ids": list(portfolio_history.keys()),
+        "macro_ids": macro_ids,
+        "matrix": corr_matrix,
+    }
+    OUT_CORRELATIONS.write_text(json.dumps(corr_payload, ensure_ascii=False, indent=2))
+    print(f"✓ {OUT_CORRELATIONS}")
 
 if __name__ == "__main__":
     main()
