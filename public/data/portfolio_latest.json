@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14T08:56:28+09:00",
+  "updated_at": "2026-07-15T08:55:21+09:00",
   "stocks": [
     {
       "id": "inpex",
@@ -12,16 +12,12 @@
       ],
       "description": "原油・天然ガス開発。WTI/ブレント原油と強く連動する傾向。",
       "category": "portfolio",
-      "value": 3391.0,
-      "change": 30.0,
-      "change_pct": 0.89,
-      "week_pct": 3.35,
-      "month_pct": -3.16,
+      "value": 3524.0,
+      "change": 133.0,
+      "change_pct": 3.92,
+      "week_pct": 4.01,
+      "month_pct": 2.48,
       "history": [
-        {
-          "date": "2026-06-02",
-          "close": 3509.5193
-        },
         {
           "date": "2026-06-03",
           "close": 3647.2632
@@ -137,6 +133,10 @@
         {
           "date": "2026-07-13",
           "close": 3391.0
+        },
+        {
+          "date": "2026-07-14",
+          "close": 3524.0
         }
       ]
     },
@@ -151,16 +151,12 @@
       ],
       "description": "海外売上比率が高くドル円の影響を受けやすい。NASDAQ100との連動も参考に。",
       "category": "portfolio",
-      "value": 7106.0,
-      "change": 76.0,
-      "change_pct": 1.08,
-      "week_pct": -0.59,
-      "month_pct": -0.95,
+      "value": 7050.0,
+      "change": -56.0,
+      "change_pct": -0.79,
+      "week_pct": -0.49,
+      "month_pct": -0.84,
       "history": [
-        {
-          "date": "2026-06-02",
-          "close": 7426.0
-        },
         {
           "date": "2026-06-03",
           "close": 7457.0
@@ -276,6 +272,10 @@
         {
           "date": "2026-07-13",
           "close": 7106.0
+        },
+        {
+          "date": "2026-07-14",
+          "close": 7050.0
         }
       ]
     },
@@ -290,16 +290,12 @@
       ],
       "description": "グロース株。米長期金利上昇局面でバリュエーション圧縮リスクあり。",
       "category": "portfolio",
-      "value": 703.3,
-      "change": 26.8,
-      "change_pct": 3.96,
-      "week_pct": -0.37,
-      "month_pct": 8.99,
+      "value": 726.2,
+      "change": 22.9,
+      "change_pct": 3.26,
+      "week_pct": 6.97,
+      "month_pct": 14.04,
       "history": [
-        {
-          "date": "2026-06-02",
-          "close": 791.3
-        },
         {
           "date": "2026-06-03",
           "close": 694.7
@@ -415,6 +411,10 @@
         {
           "date": "2026-07-13",
           "close": 703.3
+        },
+        {
+          "date": "2026-07-14",
+          "close": 726.2
         }
       ]
     },
@@ -429,16 +429,12 @@
       ],
       "description": "素材・景気敏感株。中国需要・原材料費・ドル円が業績に影響。",
       "category": "portfolio",
-      "value": 560.0,
-      "change": 9.8,
-      "change_pct": 1.78,
-      "week_pct": -0.05,
-      "month_pct": 1.52,
+      "value": 567.6,
+      "change": 7.6,
+      "change_pct": 1.36,
+      "week_pct": 2.09,
+      "month_pct": -1.15,
       "history": [
-        {
-          "date": "2026-06-02",
-          "close": 536.6
-        },
         {
           "date": "2026-06-03",
           "close": 546.7
@@ -554,6 +550,10 @@
         {
           "date": "2026-07-13",
           "close": 560.0
+        },
+        {
+          "date": "2026-07-14",
+          "close": 567.6
         }
       ]
     },
@@ -568,16 +568,12 @@
       ],
       "description": "総合商社。コモディティ全般（資源・エネルギー・金属）と連動。",
       "category": "portfolio",
-      "value": 4580.0,
-      "change": 24.0,
-      "change_pct": 0.53,
-      "week_pct": -2.07,
-      "month_pct": -6.26,
+      "value": 4698.0,
+      "change": 118.0,
+      "change_pct": 2.58,
+      "week_pct": 0.88,
+      "month_pct": -2.89,
       "history": [
-        {
-          "date": "2026-06-02",
-          "close": 5066.0
-        },
         {
           "date": "2026-06-03",
           "close": 5059.0
@@ -693,6 +689,10 @@
         {
           "date": "2026-07-13",
           "close": 4580.0
+        },
+        {
+          "date": "2026-07-14",
+          "close": 4698.0
         }
       ]
     },
@@ -707,16 +707,12 @@
       ],
       "description": "グロース・フィンテック株。金利敏感。NASDAQ100との連動を確認。",
       "category": "portfolio",
-      "value": 9706.0,
-      "change": -47.0,
-      "change_pct": -0.48,
-      "week_pct": -2.99,
-      "month_pct": 17.11,
+      "value": 9824.0,
+      "change": 118.0,
+      "change_pct": 1.22,
+      "week_pct": -1.32,
+      "month_pct": 19.76,
       "history": [
-        {
-          "date": "2026-06-02",
-          "close": 8751.0
-        },
         {
           "date": "2026-06-03",
           "close": 8500.0
@@ -832,6 +828,10 @@
         {
           "date": "2026-07-13",
           "close": 9706.0
+        },
+        {
+          "date": "2026-07-14",
+          "close": 9824.0
         }
       ]
     },
@@ -846,16 +846,12 @@
       ],
       "description": "太陽光・環境事業。エネルギー価格と再エネ普及速度が業績に影響。",
       "category": "portfolio",
-      "value": 248.0,
-      "change": -1.0,
-      "change_pct": -0.4,
-      "week_pct": 0.0,
-      "month_pct": 10.22,
+      "value": 249.0,
+      "change": 1.0,
+      "change_pct": 0.4,
+      "week_pct": 1.63,
+      "month_pct": 10.18,
       "history": [
-        {
-          "date": "2026-06-02",
-          "close": 246.0
-        },
         {
           "date": "2026-06-03",
           "close": 247.0
@@ -971,6 +967,10 @@
         {
           "date": "2026-07-13",
           "close": 248.0
+        },
+        {
+          "date": "2026-07-14",
+          "close": 249.0
         }
       ]
     }
