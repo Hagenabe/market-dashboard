@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T09:02:40+09:00",
+  "updated_at": "2026-07-28T09:04:35+09:00",
   "portfolio_ids": [
     "inpex",
     "nintendo",
@@ -19,60 +19,60 @@
   ],
   "matrix": {
     "inpex": {
-      "wti": 0.21,
+      "wti": 0.214,
       "us10y": 0.097,
-      "usdjpy": 0.219,
+      "usdjpy": 0.22,
       "gold": 0.065,
-      "nikkei": 0.383,
-      "nasdaq100": -0.017
+      "nikkei": 0.381,
+      "nasdaq100": -0.018
     },
     "nintendo": {
-      "wti": -0.038,
-      "us10y": 0.029,
-      "usdjpy": 0.145,
-      "gold": 0.018,
+      "wti": -0.05,
+      "us10y": 0.028,
+      "usdjpy": 0.143,
+      "gold": 0.019,
       "nikkei": 0.449,
-      "nasdaq100": 0.027
+      "nasdaq100": 0.026
     },
     "shift": {
-      "wti": 0.022,
-      "us10y": 0.0,
-      "usdjpy": 0.024,
+      "wti": 0.01,
+      "us10y": -0.001,
+      "usdjpy": 0.022,
       "gold": 0.07,
-      "nikkei": 0.24,
-      "nasdaq100": 0.16
+      "nikkei": 0.233,
+      "nasdaq100": 0.156
     },
     "nsc": {
-      "wti": -0.008,
-      "us10y": 0.073,
-      "usdjpy": 0.137,
-      "gold": 0.07,
-      "nikkei": 0.506,
-      "nasdaq100": 0.013
+      "wti": -0.017,
+      "us10y": 0.071,
+      "usdjpy": 0.134,
+      "gold": 0.071,
+      "nikkei": 0.502,
+      "nasdaq100": 0.012
     },
     "mitsui": {
-      "wti": 0.104,
-      "us10y": 0.066,
+      "wti": 0.103,
+      "us10y": 0.065,
       "usdjpy": 0.22,
       "gold": 0.139,
-      "nikkei": 0.627,
-      "nasdaq100": 0.009
+      "nikkei": 0.626,
+      "nasdaq100": 0.01
     },
     "gmo_pg": {
-      "wti": 0.011,
+      "wti": 0.003,
       "us10y": -0.049,
-      "usdjpy": -0.044,
+      "usdjpy": -0.045,
       "gold": -0.001,
-      "nikkei": 0.334,
+      "nikkei": 0.335,
       "nasdaq100": 0.01
     },
     "sanix": {
-      "wti": 0.06,
+      "wti": 0.058,
       "us10y": 0.083,
-      "usdjpy": 0.177,
+      "usdjpy": 0.176,
       "gold": 0.008,
       "nikkei": 0.464,
-      "nasdaq100": 0.016
+      "nasdaq100": 0.017
     }
   }
 }
