@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29T09:00:05+09:00",
+  "updated_at": "2026-07-30T09:02:52+09:00",
   "portfolio_ids": [
     "inpex",
     "nintendo",
@@ -19,58 +19,58 @@
   ],
   "matrix": {
     "inpex": {
-      "wti": 0.214,
-      "us10y": 0.098,
+      "wti": 0.217,
+      "us10y": 0.099,
       "usdjpy": 0.221,
-      "gold": 0.066,
-      "nikkei": 0.38,
-      "nasdaq100": -0.017
+      "gold": 0.067,
+      "nikkei": 0.382,
+      "nasdaq100": -0.018
     },
     "nintendo": {
-      "wti": -0.049,
-      "us10y": 0.026,
+      "wti": -0.046,
+      "us10y": 0.024,
       "usdjpy": 0.141,
-      "gold": 0.017,
-      "nikkei": 0.447,
-      "nasdaq100": 0.025
+      "gold": 0.022,
+      "nikkei": 0.44,
+      "nasdaq100": 0.02
     },
     "shift": {
-      "wti": 0.009,
-      "us10y": -0.004,
+      "wti": 0.005,
+      "us10y": -0.006,
       "usdjpy": 0.019,
-      "gold": 0.066,
-      "nikkei": 0.232,
+      "gold": 0.067,
+      "nikkei": 0.223,
       "nasdaq100": 0.153
     },
     "nsc": {
-      "wti": -0.018,
-      "us10y": 0.069,
+      "wti": -0.015,
+      "us10y": 0.067,
       "usdjpy": 0.131,
-      "gold": 0.068,
-      "nikkei": 0.501,
-      "nasdaq100": 0.011
+      "gold": 0.073,
+      "nikkei": 0.492,
+      "nasdaq100": 0.007
     },
     "mitsui": {
-      "wti": 0.103,
-      "us10y": 0.065,
+      "wti": 0.105,
+      "us10y": 0.066,
       "usdjpy": 0.217,
       "gold": 0.14,
       "nikkei": 0.626,
-      "nasdaq100": 0.011
-    },
-    "gmo_pg": {
-      "wti": 0.003,
-      "us10y": -0.05,
-      "usdjpy": -0.045,
-      "gold": -0.001,
-      "nikkei": 0.335,
       "nasdaq100": 0.01
     },
+    "gmo_pg": {
+      "wti": 0.008,
+      "us10y": -0.05,
+      "usdjpy": -0.045,
+      "gold": 0.003,
+      "nikkei": 0.333,
+      "nasdaq100": 0.006
+    },
     "sanix": {
-      "wti": 0.058,
-      "us10y": 0.082,
+      "wti": 0.06,
+      "us10y": 0.083,
       "usdjpy": 0.174,
-      "gold": 0.009,
+      "gold": 0.01,
       "nikkei": 0.464,
       "nasdaq100": 0.017
     }
