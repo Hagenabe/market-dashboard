@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T09:11:38+09:00",
+  "updated_at": "2026-08-05T09:06:01+09:00",
   "portfolio_ids": [
     "inpex",
     "nintendo",
@@ -19,60 +19,60 @@
   ],
   "matrix": {
     "inpex": {
-      "wti": 0.222,
-      "us10y": 0.106,
-      "usdjpy": 0.225,
-      "gold": 0.064,
-      "nikkei": 0.379,
-      "nasdaq100": -0.019
+      "wti": 0.223,
+      "us10y": 0.107,
+      "usdjpy": 0.226,
+      "gold": 0.066,
+      "nikkei": 0.38,
+      "nasdaq100": -0.021
     },
     "nintendo": {
-      "wti": -0.046,
-      "us10y": 0.018,
+      "wti": -0.045,
+      "us10y": 0.019,
       "usdjpy": 0.151,
       "gold": 0.021,
       "nikkei": 0.425,
-      "nasdaq100": 0.018
+      "nasdaq100": 0.017
     },
     "shift": {
-      "wti": 0.004,
+      "wti": 0.008,
       "us10y": -0.003,
       "usdjpy": 0.027,
-      "gold": 0.067,
+      "gold": 0.064,
       "nikkei": 0.215,
-      "nasdaq100": 0.146
+      "nasdaq100": 0.141
     },
     "nsc": {
-      "wti": -0.015,
-      "us10y": 0.07,
-      "usdjpy": 0.135,
-      "gold": 0.068,
-      "nikkei": 0.481,
-      "nasdaq100": 0.0
+      "wti": -0.013,
+      "us10y": 0.069,
+      "usdjpy": 0.138,
+      "gold": 0.069,
+      "nikkei": 0.482,
+      "nasdaq100": -0.002
     },
     "mitsui": {
-      "wti": 0.107,
-      "us10y": 0.07,
+      "wti": 0.108,
+      "us10y": 0.071,
       "usdjpy": 0.217,
       "gold": 0.139,
       "nikkei": 0.622,
-      "nasdaq100": 0.007
+      "nasdaq100": 0.005
     },
     "gmo_pg": {
-      "wti": 0.011,
-      "us10y": -0.047,
-      "usdjpy": -0.037,
-      "gold": -0.003,
+      "wti": 0.012,
+      "us10y": -0.048,
+      "usdjpy": -0.035,
+      "gold": -0.001,
       "nikkei": 0.325,
-      "nasdaq100": 0.001
+      "nasdaq100": -0.0
     },
     "sanix": {
       "wti": 0.065,
       "us10y": 0.097,
-      "usdjpy": 0.176,
+      "usdjpy": 0.177,
       "gold": 0.008,
       "nikkei": 0.46,
-      "nasdaq100": 0.017
+      "nasdaq100": 0.016
     }
   }
 }
