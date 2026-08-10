@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T08:33:43+09:00",
+  "updated_at": "2026-08-11T08:37:38+09:00",
   "sectors": [
     {
       "id": "sec_energy",
@@ -8,16 +8,12 @@
       "topix_beta": 1.2,
       "name_ja": "エネルギー",
       "category": "sector",
-      "value": 3499.0,
-      "change": 39.0,
-      "change_pct": 1.13,
-      "week_pct": -0.57,
-      "month_pct": 4.11,
+      "value": 3612.0,
+      "change": 113.0,
+      "change_pct": 3.23,
+      "week_pct": 3.44,
+      "month_pct": 7.47,
       "history": [
-        {
-          "date": "2026-06-26",
-          "close": 3295.0
-        },
         {
           "date": "2026-06-29",
           "close": 3278.0
@@ -133,6 +129,10 @@
         {
           "date": "2026-08-07",
           "close": 3499.0
+        },
+        {
+          "date": "2026-08-10",
+          "close": 3612.0
         }
       ]
     },
@@ -143,16 +143,12 @@
       "topix_beta": 1.3,
       "name_ja": "素材・鉄鋼",
       "category": "sector",
-      "value": 697.5,
-      "change": 14.0,
-      "change_pct": 2.05,
-      "week_pct": 7.81,
-      "month_pct": 26.77,
+      "value": 689.4,
+      "change": -8.1,
+      "change_pct": -1.16,
+      "week_pct": 6.72,
+      "month_pct": 25.3,
       "history": [
-        {
-          "date": "2026-06-26",
-          "close": 543.3
-        },
         {
           "date": "2026-06-29",
           "close": 546.1
@@ -268,6 +264,10 @@
         {
           "date": "2026-08-07",
           "close": 697.5
+        },
+        {
+          "date": "2026-08-10",
+          "close": 689.4
         }
       ]
     },
@@ -278,16 +278,12 @@
       "topix_beta": 1.1,
       "name_ja": "輸送機器",
       "category": "sector",
-      "value": 2980.0,
-      "change": -3.5,
-      "change_pct": -0.12,
-      "week_pct": 0.56,
-      "month_pct": 5.56,
+      "value": 2981.0,
+      "change": 1.0,
+      "change_pct": 0.03,
+      "week_pct": 2.14,
+      "month_pct": 5.6,
       "history": [
-        {
-          "date": "2026-06-26",
-          "close": 2768.0
-        },
         {
           "date": "2026-06-29",
           "close": 2772.0
@@ -403,6 +399,10 @@
         {
           "date": "2026-08-07",
           "close": 2980.0
+        },
+        {
+          "date": "2026-08-10",
+          "close": 2981.0
         }
       ]
     },
@@ -413,16 +413,12 @@
       "topix_beta": 1.2,
       "name_ja": "電気機器",
       "category": "sector",
-      "value": 3721.0,
-      "change": 95.0,
-      "change_pct": 2.62,
-      "week_pct": 3.68,
-      "month_pct": 10.78,
+      "value": 3764.0,
+      "change": 43.0,
+      "change_pct": 1.16,
+      "week_pct": 6.36,
+      "month_pct": 12.06,
       "history": [
-        {
-          "date": "2026-06-26",
-          "close": 3199.0
-        },
         {
           "date": "2026-06-29",
           "close": 3299.0
@@ -538,6 +534,10 @@
         {
           "date": "2026-08-07",
           "close": 3721.0
+        },
+        {
+          "date": "2026-08-10",
+          "close": 3764.0
         }
       ]
     },
@@ -548,16 +548,12 @@
       "topix_beta": 1.0,
       "name_ja": "銀行・金融",
       "category": "sector",
-      "value": 3564.0,
-      "change": -10.0,
-      "change_pct": -0.28,
-      "week_pct": -0.08,
-      "month_pct": 2.98,
+      "value": 3510.0,
+      "change": -54.0,
+      "change_pct": -1.52,
+      "week_pct": 1.15,
+      "month_pct": 1.42,
       "history": [
-        {
-          "date": "2026-06-26",
-          "close": 3245.0
-        },
         {
           "date": "2026-06-29",
           "close": 3211.0
@@ -673,6 +669,10 @@
         {
           "date": "2026-08-07",
           "close": 3564.0
+        },
+        {
+          "date": "2026-08-10",
+          "close": 3510.0
         }
       ]
     },
@@ -683,16 +683,12 @@
       "topix_beta": 1.1,
       "name_ja": "商社",
       "category": "sector",
-      "value": 4868.0,
-      "change": 120.0,
-      "change_pct": 2.53,
-      "week_pct": 1.69,
-      "month_pct": 10.41,
+      "value": 4849.0,
+      "change": -19.0,
+      "change_pct": -0.39,
+      "week_pct": 2.34,
+      "month_pct": 9.98,
       "history": [
-        {
-          "date": "2026-06-26",
-          "close": 4403.0
-        },
         {
           "date": "2026-06-29",
           "close": 4414.0
@@ -808,6 +804,10 @@
         {
           "date": "2026-08-07",
           "close": 4868.0
+        },
+        {
+          "date": "2026-08-10",
+          "close": 4849.0
         }
       ]
     },
@@ -818,16 +818,12 @@
       "topix_beta": 0.7,
       "name_ja": "医薬品",
       "category": "sector",
-      "value": 5540.0,
-      "change": 115.0,
-      "change_pct": 2.12,
-      "week_pct": 2.44,
-      "month_pct": 3.38,
+      "value": 5582.0,
+      "change": 42.0,
+      "change_pct": 0.76,
+      "week_pct": 5.6,
+      "month_pct": 4.16,
       "history": [
-        {
-          "date": "2026-06-26",
-          "close": 5087.0
-        },
         {
           "date": "2026-06-29",
           "close": 5176.0
@@ -943,6 +939,10 @@
         {
           "date": "2026-08-07",
           "close": 5540.0
+        },
+        {
+          "date": "2026-08-10",
+          "close": 5582.0
         }
       ]
     },
@@ -953,16 +953,12 @@
       "topix_beta": 0.9,
       "name_ja": "不動産",
       "category": "sector",
-      "value": 1525.0,
-      "change": 37.0,
-      "change_pct": 2.49,
-      "week_pct": 2.45,
-      "month_pct": 0.93,
+      "value": 1464.5,
+      "change": -60.5,
+      "change_pct": -3.97,
+      "week_pct": -0.64,
+      "month_pct": -3.08,
       "history": [
-        {
-          "date": "2026-06-26",
-          "close": 1480.0
-        },
         {
           "date": "2026-06-29",
           "close": 1520.5
@@ -1078,6 +1074,10 @@
         {
           "date": "2026-08-07",
           "close": 1525.0
+        },
+        {
+          "date": "2026-08-10",
+          "close": 1464.5
         }
       ]
     },
@@ -1088,16 +1088,12 @@
       "topix_beta": 0.8,
       "name_ja": "小売・消費",
       "category": "sector",
-      "value": 2097.5,
-      "change": 46.0,
-      "change_pct": 2.24,
-      "week_pct": 1.3,
-      "month_pct": 3.76,
+      "value": 2085.5,
+      "change": -12.0,
+      "change_pct": -0.57,
+      "week_pct": 2.63,
+      "month_pct": 3.17,
       "history": [
-        {
-          "date": "2026-06-26",
-          "close": 1903.5
-        },
         {
           "date": "2026-06-29",
           "close": 1953.5
@@ -1213,6 +1209,10 @@
         {
           "date": "2026-08-07",
           "close": 2097.5
+        },
+        {
+          "date": "2026-08-10",
+          "close": 2085.5
         }
       ]
     },
@@ -1223,16 +1223,12 @@
       "topix_beta": 1.3,
       "name_ja": "情報・通信",
       "category": "sector",
-      "value": 5552.0,
-      "change": -143.0,
-      "change_pct": -2.51,
-      "week_pct": 2.95,
-      "month_pct": -12.84,
+      "value": 5484.0,
+      "change": -68.0,
+      "change_pct": -1.22,
+      "week_pct": 4.9,
+      "month_pct": -13.91,
       "history": [
-        {
-          "date": "2026-06-26",
-          "close": 6226.0
-        },
         {
           "date": "2026-06-29",
           "close": 5894.0
@@ -1348,6 +1344,10 @@
         {
           "date": "2026-08-07",
           "close": 5552.0
+        },
+        {
+          "date": "2026-08-10",
+          "close": 5484.0
         }
       ]
     }
