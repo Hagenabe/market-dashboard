@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T08:37:38+09:00",
+  "updated_at": "2026-08-12T08:42:56+09:00",
   "sectors": [
     {
       "id": "sec_energy",
@@ -11,8 +11,8 @@
       "value": 3612.0,
       "change": 113.0,
       "change_pct": 3.23,
-      "week_pct": 3.44,
-      "month_pct": 7.47,
+      "week_pct": 6.42,
+      "month_pct": 6.52,
       "history": [
         {
           "date": "2026-06-29",
@@ -146,8 +146,8 @@
       "value": 689.4,
       "change": -8.1,
       "change_pct": -1.16,
-      "week_pct": 6.72,
-      "month_pct": 25.3,
+      "week_pct": 2.59,
+      "month_pct": 23.11,
       "history": [
         {
           "date": "2026-06-29",
@@ -281,8 +281,8 @@
       "value": 2981.0,
       "change": 1.0,
       "change_pct": 0.03,
-      "week_pct": 2.14,
-      "month_pct": 5.6,
+      "week_pct": 2.28,
+      "month_pct": 6.24,
       "history": [
         {
           "date": "2026-06-29",
@@ -416,8 +416,8 @@
       "value": 3764.0,
       "change": 43.0,
       "change_pct": 1.16,
-      "week_pct": 6.36,
-      "month_pct": 12.06,
+      "week_pct": 5.58,
+      "month_pct": 12.66,
       "history": [
         {
           "date": "2026-06-29",
@@ -551,8 +551,8 @@
       "value": 3510.0,
       "change": -54.0,
       "change_pct": -1.52,
-      "week_pct": 1.15,
-      "month_pct": 1.42,
+      "week_pct": -0.88,
+      "month_pct": -0.88,
       "history": [
         {
           "date": "2026-06-29",
@@ -686,8 +686,8 @@
       "value": 4849.0,
       "change": -19.0,
       "change_pct": -0.39,
-      "week_pct": 2.34,
-      "month_pct": 9.98,
+      "week_pct": 4.48,
+      "month_pct": 9.21,
       "history": [
         {
           "date": "2026-06-29",
@@ -821,8 +821,8 @@
       "value": 5582.0,
       "change": 42.0,
       "change_pct": 0.76,
-      "week_pct": 5.6,
-      "month_pct": 4.16,
+      "week_pct": 5.94,
+      "month_pct": 4.96,
       "history": [
         {
           "date": "2026-06-29",
@@ -956,8 +956,8 @@
       "value": 1464.5,
       "change": -60.5,
       "change_pct": -3.97,
-      "week_pct": -0.64,
-      "month_pct": -3.08,
+      "week_pct": -1.15,
+      "month_pct": -3.46,
       "history": [
         {
           "date": "2026-06-29",
@@ -1091,8 +1091,8 @@
       "value": 2085.5,
       "change": -12.0,
       "change_pct": -0.57,
-      "week_pct": 2.63,
-      "month_pct": 3.17,
+      "week_pct": 4.8,
+      "month_pct": 3.6,
       "history": [
         {
           "date": "2026-06-29",
@@ -1226,8 +1226,8 @@
       "value": 5484.0,
       "change": -68.0,
       "change_pct": -1.22,
-      "week_pct": 4.9,
-      "month_pct": -13.91,
+      "week_pct": -7.96,
+      "month_pct": -13.83,
       "history": [
         {
           "date": "2026-06-29",
