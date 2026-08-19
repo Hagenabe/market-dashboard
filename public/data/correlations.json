@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T08:24:46+09:00",
+  "updated_at": "2026-08-20T08:25:46+09:00",
   "portfolio_ids": [
     "inpex",
     "nintendo",
@@ -19,60 +19,60 @@
   ],
   "matrix": {
     "inpex": {
-      "wti": 0.246,
-      "us10y": 0.104,
+      "wti": 0.247,
+      "us10y": 0.102,
       "usdjpy": 0.239,
-      "gold": 0.064,
-      "nikkei": 0.38,
+      "gold": 0.06,
+      "nikkei": 0.377,
       "nasdaq100": -0.029
     },
     "nintendo": {
       "wti": -0.032,
       "us10y": 0.02,
       "usdjpy": 0.154,
-      "gold": 0.025,
-      "nikkei": 0.416,
-      "nasdaq100": 0.016
+      "gold": 0.021,
+      "nikkei": 0.415,
+      "nasdaq100": 0.017
     },
     "shift": {
-      "wti": 0.009,
+      "wti": 0.008,
       "us10y": 0.0,
       "usdjpy": 0.032,
-      "gold": 0.071,
-      "nikkei": 0.212,
+      "gold": 0.075,
+      "nikkei": 0.214,
       "nasdaq100": 0.141
     },
     "nsc": {
-      "wti": -0.014,
-      "us10y": 0.073,
-      "usdjpy": 0.142,
-      "gold": 0.078,
-      "nikkei": 0.481,
+      "wti": -0.013,
+      "us10y": 0.071,
+      "usdjpy": 0.141,
+      "gold": 0.069,
+      "nikkei": 0.472,
       "nasdaq100": -0.01
     },
     "mitsui": {
-      "wti": 0.106,
-      "us10y": 0.075,
-      "usdjpy": 0.222,
-      "gold": 0.135,
-      "nikkei": 0.611,
-      "nasdaq100": 0.004
+      "wti": 0.107,
+      "us10y": 0.076,
+      "usdjpy": 0.221,
+      "gold": 0.129,
+      "nikkei": 0.607,
+      "nasdaq100": 0.005
     },
     "gmo_pg": {
-      "wti": 0.007,
-      "us10y": -0.039,
+      "wti": 0.008,
+      "us10y": -0.04,
       "usdjpy": -0.027,
-      "gold": -0.003,
-      "nikkei": 0.313,
+      "gold": 0.0,
+      "nikkei": 0.315,
       "nasdaq100": 0.001
     },
     "sanix": {
-      "wti": 0.065,
-      "us10y": 0.11,
+      "wti": 0.064,
+      "us10y": 0.108,
       "usdjpy": 0.188,
-      "gold": 0.008,
-      "nikkei": 0.463,
-      "nasdaq100": 0.017
+      "gold": 0.018,
+      "nikkei": 0.462,
+      "nasdaq100": 0.016
     }
   }
 }
