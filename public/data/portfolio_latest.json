@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T10:06:57+09:00",
+  "updated_at": "2026-09-21T09:55:14+09:00",
   "stocks": [
     {
       "id": "inpex",
@@ -12,11 +12,11 @@
       ],
       "description": "原油・天然ガス開発。WTI/ブレント原油と強く連動する傾向。",
       "category": "portfolio",
-      "value": 3930.0,
-      "change": 1.0,
-      "change_pct": 0.03,
-      "week_pct": 0.0,
-      "month_pct": 1.81,
+      "value": 3913.0,
+      "change": -16.0,
+      "change_pct": -0.41,
+      "week_pct": -1.68,
+      "month_pct": -1.04,
       "history": [
         {
           "date": "2026-08-07",
@@ -136,7 +136,7 @@
         },
         {
           "date": "2026-09-18",
-          "close": 3930.0
+          "close": 3913.0
         }
       ]
     },
@@ -151,11 +151,11 @@
       ],
       "description": "海外売上比率が高くドル円の影響を受けやすい。NASDAQ100との連動も参考に。",
       "category": "portfolio",
-      "value": 8331.0,
-      "change": -144.0,
-      "change_pct": -1.7,
-      "week_pct": 2.94,
-      "month_pct": -2.87,
+      "value": 8339.0,
+      "change": -136.0,
+      "change_pct": -1.6,
+      "week_pct": 0.86,
+      "month_pct": -3.02,
       "history": [
         {
           "date": "2026-08-07",
@@ -275,7 +275,7 @@
         },
         {
           "date": "2026-09-18",
-          "close": 8331.0
+          "close": 8339.0
         }
       ]
     },
@@ -290,11 +290,11 @@
       ],
       "description": "グロース株。米長期金利上昇局面でバリュエーション圧縮リスクあり。",
       "category": "portfolio",
-      "value": 880.4,
-      "change": 1.2,
-      "change_pct": 0.14,
-      "week_pct": 5.5,
-      "month_pct": -2.81,
+      "value": 881.1,
+      "change": 1.9,
+      "change_pct": 0.22,
+      "week_pct": -0.42,
+      "month_pct": -7.35,
       "history": [
         {
           "date": "2026-08-07",
@@ -414,7 +414,7 @@
         },
         {
           "date": "2026-09-18",
-          "close": 880.4
+          "close": 881.1
         }
       ]
     },
@@ -429,11 +429,11 @@
       ],
       "description": "素材・景気敏感株。中国需要・原材料費・ドル円が業績に影響。",
       "category": "portfolio",
-      "value": 692.3,
-      "change": -10.3,
-      "change_pct": -1.47,
-      "week_pct": 0.86,
-      "month_pct": 2.12,
+      "value": 695.0,
+      "change": -7.6,
+      "change_pct": -1.08,
+      "week_pct": 1.59,
+      "month_pct": 5.4,
       "history": [
         {
           "date": "2026-08-07",
@@ -553,7 +553,7 @@
         },
         {
           "date": "2026-09-18",
-          "close": 692.3
+          "close": 695.0
         }
       ]
     },
@@ -568,11 +568,11 @@
       ],
       "description": "総合商社。コモディティ全般（資源・エネルギー・金属）と連動。",
       "category": "portfolio",
-      "value": 5155.0,
-      "change": -69.0,
-      "change_pct": -1.32,
-      "week_pct": 1.88,
-      "month_pct": 7.87,
+      "value": 5161.0,
+      "change": -63.0,
+      "change_pct": -1.21,
+      "week_pct": -0.06,
+      "month_pct": 5.35,
       "history": [
         {
           "date": "2026-08-07",
@@ -692,7 +692,7 @@
         },
         {
           "date": "2026-09-18",
-          "close": 5155.0
+          "close": 5161.0
         }
       ]
     },
@@ -707,11 +707,11 @@
       ],
       "description": "グロース・フィンテック株。金利敏感。NASDAQ100との連動を確認。",
       "category": "portfolio",
-      "value": 8882.0,
-      "change": 13.0,
-      "change_pct": 0.15,
-      "week_pct": 7.1,
-      "month_pct": -5.54,
+      "value": 8819.0,
+      "change": -50.0,
+      "change_pct": -0.56,
+      "week_pct": 2.71,
+      "month_pct": -4.37,
       "history": [
         {
           "date": "2026-08-07",
@@ -831,7 +831,7 @@
         },
         {
           "date": "2026-09-18",
-          "close": 8882.0
+          "close": 8819.0
         }
       ]
     },
@@ -846,11 +846,11 @@
       ],
       "description": "太陽光・環境事業。エネルギー価格と再エネ普及速度が業績に影響。",
       "category": "portfolio",
-      "value": 247.0,
-      "change": 0.0,
-      "change_pct": 0.0,
-      "week_pct": -2.37,
-      "month_pct": -8.18,
+      "value": 251.0,
+      "change": 4.0,
+      "change_pct": 1.62,
+      "week_pct": 2.45,
+      "month_pct": -10.36,
       "history": [
         {
           "date": "2026-08-07",
@@ -970,7 +970,7 @@
         },
         {
           "date": "2026-09-18",
-          "close": 247.0
+          "close": 251.0
         }
       ]
     }
