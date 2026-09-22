@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T09:55:16+09:00",
+  "updated_at": "2026-09-22T10:29:40+09:00",
   "sectors": [
     {
       "id": "sec_energy",
@@ -11,7 +11,7 @@
       "value": 3913.0,
       "change": -16.0,
       "change_pct": -0.41,
-      "week_pct": -1.68,
+      "week_pct": -0.58,
       "month_pct": -1.04,
       "history": [
         {
@@ -146,7 +146,7 @@
       "value": 695.0,
       "change": -7.6,
       "change_pct": -1.08,
-      "week_pct": 1.59,
+      "week_pct": 2.51,
       "month_pct": 5.4,
       "history": [
         {
@@ -281,7 +281,7 @@
       "value": 3025.0,
       "change": -9.0,
       "change_pct": -0.3,
-      "week_pct": 0.0,
+      "week_pct": 0.13,
       "month_pct": -3.42,
       "history": [
         {
@@ -416,7 +416,7 @@
       "value": 3697.0,
       "change": -57.0,
       "change_pct": -1.52,
-      "week_pct": -2.4,
+      "week_pct": -0.75,
       "month_pct": -2.32,
       "history": [
         {
@@ -551,7 +551,7 @@
       "value": 3620.0,
       "change": -32.0,
       "change_pct": -0.88,
-      "week_pct": -2.69,
+      "week_pct": -1.31,
       "month_pct": 3.19,
       "history": [
         {
@@ -686,7 +686,7 @@
       "value": 4947.0,
       "change": -32.0,
       "change_pct": -0.64,
-      "week_pct": -0.88,
+      "week_pct": 0.75,
       "month_pct": 3.19,
       "history": [
         {
@@ -821,7 +821,7 @@
       "value": 5968.0,
       "change": 22.0,
       "change_pct": 0.37,
-      "week_pct": 4.03,
+      "week_pct": 2.07,
       "month_pct": 3.54,
       "history": [
         {
@@ -956,7 +956,7 @@
       "value": 1485.0,
       "change": -20.0,
       "change_pct": -1.33,
-      "week_pct": -0.74,
+      "week_pct": 0.92,
       "month_pct": -0.87,
       "history": [
         {
@@ -1091,7 +1091,7 @@
       "value": 2020.0,
       "change": -34.5,
       "change_pct": -1.68,
-      "week_pct": -0.86,
+      "week_pct": -0.98,
       "month_pct": 0.99,
       "history": [
         {
@@ -1226,7 +1226,7 @@
       "value": 6315.0,
       "change": 68.0,
       "change_pct": 1.09,
-      "week_pct": 8.15,
+      "week_pct": 0.57,
       "month_pct": 20.17,
       "history": [
         {

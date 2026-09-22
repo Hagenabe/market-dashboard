@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T09:55:14+09:00",
+  "updated_at": "2026-09-22T10:29:38+09:00",
   "stocks": [
     {
       "id": "inpex",
@@ -15,7 +15,7 @@
       "value": 3913.0,
       "change": -16.0,
       "change_pct": -0.41,
-      "week_pct": -1.68,
+      "week_pct": -0.58,
       "month_pct": -1.04,
       "history": [
         {
@@ -154,7 +154,7 @@
       "value": 8339.0,
       "change": -136.0,
       "change_pct": -1.6,
-      "week_pct": 0.86,
+      "week_pct": 2.72,
       "month_pct": -3.02,
       "history": [
         {
@@ -293,7 +293,7 @@
       "value": 881.1,
       "change": 1.9,
       "change_pct": 0.22,
-      "week_pct": -0.42,
+      "week_pct": 0.99,
       "month_pct": -7.35,
       "history": [
         {
@@ -432,7 +432,7 @@
       "value": 695.0,
       "change": -7.6,
       "change_pct": -1.08,
-      "week_pct": 1.59,
+      "week_pct": 2.51,
       "month_pct": 5.4,
       "history": [
         {
@@ -571,7 +571,7 @@
       "value": 5161.0,
       "change": -63.0,
       "change_pct": -1.21,
-      "week_pct": -0.06,
+      "week_pct": 1.81,
       "month_pct": 5.35,
       "history": [
         {
@@ -710,7 +710,7 @@
       "value": 8819.0,
       "change": -50.0,
       "change_pct": -0.56,
-      "week_pct": 2.71,
+      "week_pct": 1.29,
       "month_pct": -4.37,
       "history": [
         {
@@ -849,7 +849,7 @@
       "value": 251.0,
       "change": 4.0,
       "change_pct": 1.62,
-      "week_pct": 2.45,
+      "week_pct": 1.21,
       "month_pct": -10.36,
       "history": [
         {
