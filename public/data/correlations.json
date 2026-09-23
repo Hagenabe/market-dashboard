@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T10:29:40+09:00",
+  "updated_at": "2026-09-23T10:19:35+09:00",
   "portfolio_ids": [
     "inpex",
     "nintendo",
@@ -37,24 +37,24 @@
     "shift": {
       "wti": 0.008,
       "us10y": 0.001,
-      "usdjpy": 0.021,
+      "usdjpy": 0.02,
       "gold": 0.068,
       "nikkei": 0.207,
-      "nasdaq100": 0.141
+      "nasdaq100": 0.14
     },
     "nsc": {
       "wti": -0.014,
       "us10y": 0.065,
-      "usdjpy": 0.146,
-      "gold": 0.064,
+      "usdjpy": 0.147,
+      "gold": 0.065,
       "nikkei": 0.468,
       "nasdaq100": -0.016
     },
     "mitsui": {
-      "wti": 0.102,
+      "wti": 0.103,
       "us10y": 0.069,
-      "usdjpy": 0.221,
-      "gold": 0.131,
+      "usdjpy": 0.22,
+      "gold": 0.132,
       "nikkei": 0.597,
       "nasdaq100": 0.002
     },
@@ -69,7 +69,7 @@
     "sanix": {
       "wti": 0.063,
       "us10y": 0.102,
-      "usdjpy": 0.181,
+      "usdjpy": 0.182,
       "gold": 0.013,
       "nikkei": 0.46,
       "nasdaq100": 0.01
