@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T10:27:47+09:00",
+  "updated_at": "2026-09-29T11:30:56+09:00",
   "portfolio_ids": [
     "inpex",
     "nintendo",
@@ -21,58 +21,58 @@
     "inpex": {
       "wti": 0.245,
       "us10y": 0.1,
-      "usdjpy": 0.238,
-      "gold": 0.058,
-      "nikkei": 0.369,
-      "nasdaq100": -0.039
+      "usdjpy": 0.239,
+      "gold": 0.059,
+      "nikkei": 0.371,
+      "nasdaq100": -0.038
     },
     "nintendo": {
-      "wti": -0.042,
+      "wti": -0.043,
       "us10y": 0.011,
-      "usdjpy": 0.144,
-      "gold": 0.014,
-      "nikkei": 0.409,
-      "nasdaq100": 0.011
+      "usdjpy": 0.146,
+      "gold": 0.016,
+      "nikkei": 0.41,
+      "nasdaq100": 0.012
     },
     "shift": {
-      "wti": 0.008,
+      "wti": 0.009,
       "us10y": -0.0,
-      "usdjpy": 0.02,
-      "gold": 0.068,
-      "nikkei": 0.207,
+      "usdjpy": 0.021,
+      "gold": 0.069,
+      "nikkei": 0.208,
       "nasdaq100": 0.139
     },
     "nsc": {
-      "wti": -0.009,
+      "wti": -0.01,
       "us10y": 0.061,
-      "usdjpy": 0.142,
-      "gold": 0.068,
-      "nikkei": 0.469,
+      "usdjpy": 0.143,
+      "gold": 0.067,
+      "nikkei": 0.471,
       "nasdaq100": -0.02
     },
     "mitsui": {
-      "wti": 0.106,
-      "us10y": 0.065,
-      "usdjpy": 0.216,
+      "wti": 0.105,
+      "us10y": 0.064,
+      "usdjpy": 0.217,
       "gold": 0.135,
-      "nikkei": 0.595,
-      "nasdaq100": -0.003
+      "nikkei": 0.596,
+      "nasdaq100": -0.002
     },
     "gmo_pg": {
       "wti": 0.002,
-      "us10y": -0.045,
-      "usdjpy": -0.032,
-      "gold": -0.005,
-      "nikkei": 0.306,
-      "nasdaq100": -0.001
+      "us10y": -0.046,
+      "usdjpy": -0.029,
+      "gold": -0.001,
+      "nikkei": 0.307,
+      "nasdaq100": 0.0
     },
     "sanix": {
       "wti": 0.063,
       "us10y": 0.102,
-      "usdjpy": 0.18,
-      "gold": 0.014,
-      "nikkei": 0.461,
-      "nasdaq100": 0.009
+      "usdjpy": 0.178,
+      "gold": 0.011,
+      "nikkei": 0.46,
+      "nasdaq100": 0.008
     }
   }
 }
