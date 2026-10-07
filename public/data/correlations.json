@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T11:45:23+09:00",
+  "updated_at": "2026-10-07T11:10:42+09:00",
   "portfolio_ids": [
     "inpex",
     "nintendo",
@@ -19,60 +19,60 @@
   ],
   "matrix": {
     "inpex": {
-      "wti": 0.242,
-      "us10y": 0.11,
-      "usdjpy": 0.24,
-      "gold": 0.055,
-      "nikkei": 0.361,
-      "nasdaq100": -0.04
+      "wti": 0.237,
+      "us10y": 0.122,
+      "usdjpy": 0.243,
+      "gold": 0.05,
+      "nikkei": 0.358,
+      "nasdaq100": -0.044
     },
     "nintendo": {
-      "wti": -0.041,
-      "us10y": 0.01,
+      "wti": -0.042,
+      "us10y": 0.011,
       "usdjpy": 0.146,
       "gold": 0.016,
       "nikkei": 0.407,
       "nasdaq100": 0.012
     },
     "shift": {
-      "wti": 0.008,
-      "us10y": 0.001,
+      "wti": 0.007,
+      "us10y": 0.003,
       "usdjpy": 0.021,
-      "gold": 0.067,
-      "nikkei": 0.204,
-      "nasdaq100": 0.143
+      "gold": 0.066,
+      "nikkei": 0.202,
+      "nasdaq100": 0.142
     },
     "nsc": {
-      "wti": -0.012,
-      "us10y": 0.061,
+      "wti": -0.015,
+      "us10y": 0.065,
       "usdjpy": 0.142,
-      "gold": 0.066,
+      "gold": 0.065,
       "nikkei": 0.462,
-      "nasdaq100": -0.02
+      "nasdaq100": -0.021
     },
     "mitsui": {
-      "wti": 0.103,
-      "us10y": 0.066,
-      "usdjpy": 0.217,
-      "gold": 0.133,
-      "nikkei": 0.592,
-      "nasdaq100": -0.003
+      "wti": 0.098,
+      "us10y": 0.073,
+      "usdjpy": 0.218,
+      "gold": 0.131,
+      "nikkei": 0.591,
+      "nasdaq100": -0.005
     },
     "gmo_pg": {
       "wti": 0.005,
       "us10y": -0.043,
-      "usdjpy": -0.029,
-      "gold": -0.0,
-      "nikkei": 0.308,
+      "usdjpy": -0.03,
+      "gold": 0.0,
+      "nikkei": 0.309,
       "nasdaq100": 0.002
     },
     "sanix": {
-      "wti": 0.065,
-      "us10y": 0.106,
+      "wti": 0.063,
+      "us10y": 0.108,
       "usdjpy": 0.18,
-      "gold": 0.011,
-      "nikkei": 0.455,
-      "nasdaq100": 0.004
+      "gold": 0.009,
+      "nikkei": 0.454,
+      "nasdaq100": 0.003
     }
   }
 }
