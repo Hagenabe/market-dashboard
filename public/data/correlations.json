@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T10:02:38+09:00",
+  "updated_at": "2026-10-27T10:52:30+09:00",
   "portfolio_ids": [
     "inpex",
     "nintendo",
@@ -19,59 +19,59 @@
   ],
   "matrix": {
     "inpex": {
-      "wti": 0.234,
+      "wti": 0.229,
       "us10y": 0.117,
-      "usdjpy": 0.246,
-      "gold": 0.04,
-      "nikkei": 0.355,
-      "nasdaq100": -0.047
+      "usdjpy": 0.245,
+      "gold": 0.041,
+      "nikkei": 0.353,
+      "nasdaq100": -0.045
     },
     "nintendo": {
-      "wti": -0.039,
+      "wti": -0.04,
       "us10y": 0.007,
-      "usdjpy": 0.149,
+      "usdjpy": 0.148,
       "gold": 0.021,
-      "nikkei": 0.402,
+      "nikkei": 0.401,
       "nasdaq100": 0.007
     },
     "shift": {
-      "wti": 0.025,
-      "us10y": -0.01,
+      "wti": 0.024,
+      "us10y": -0.009,
       "usdjpy": 0.02,
       "gold": 0.068,
-      "nikkei": 0.194,
+      "nikkei": 0.193,
       "nasdaq100": 0.113
     },
     "nsc": {
-      "wti": -0.02,
-      "us10y": 0.058,
+      "wti": -0.023,
+      "us10y": 0.057,
       "usdjpy": 0.15,
-      "gold": 0.064,
-      "nikkei": 0.456,
+      "gold": 0.065,
+      "nikkei": 0.455,
       "nasdaq100": -0.024
     },
     "mitsui": {
-      "wti": 0.094,
-      "us10y": 0.065,
-      "usdjpy": 0.221,
-      "gold": 0.128,
-      "nikkei": 0.585,
-      "nasdaq100": -0.005
+      "wti": 0.09,
+      "us10y": 0.066,
+      "usdjpy": 0.219,
+      "gold": 0.129,
+      "nikkei": 0.583,
+      "nasdaq100": -0.004
     },
     "gmo_pg": {
-      "wti": 0.005,
-      "us10y": -0.052,
-      "usdjpy": -0.025,
-      "gold": 0.018,
-      "nikkei": 0.301,
-      "nasdaq100": -0.007
+      "wti": 0.009,
+      "us10y": -0.053,
+      "usdjpy": -0.024,
+      "gold": 0.017,
+      "nikkei": 0.302,
+      "nasdaq100": -0.009
     },
     "sanix": {
-      "wti": 0.065,
-      "us10y": 0.109,
-      "usdjpy": 0.18,
-      "gold": 0.016,
-      "nikkei": 0.449,
+      "wti": 0.062,
+      "us10y": 0.11,
+      "usdjpy": 0.179,
+      "gold": 0.017,
+      "nikkei": 0.447,
       "nasdaq100": 0.003
     }
   }
