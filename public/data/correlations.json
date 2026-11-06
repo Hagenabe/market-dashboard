@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T12:18:22+09:00",
+  "updated_at": "2026-11-06T12:16:38+09:00",
   "portfolio_ids": [
     "inpex",
     "nintendo",
@@ -19,60 +19,60 @@
   ],
   "matrix": {
     "inpex": {
-      "wti": 0.237,
+      "wti": 0.227,
       "us10y": 0.116,
-      "usdjpy": 0.239,
-      "gold": 0.031,
-      "nikkei": 0.354,
-      "nasdaq100": -0.049
-    },
-    "nintendo": {
-      "wti": -0.042,
-      "us10y": 0.01,
-      "usdjpy": 0.147,
-      "gold": 0.023,
-      "nikkei": 0.392,
-      "nasdaq100": 0.006
-    },
-    "shift": {
-      "wti": 0.032,
-      "us10y": -0.005,
-      "usdjpy": 0.025,
-      "gold": 0.065,
-      "nikkei": 0.187,
-      "nasdaq100": 0.108
-    },
-    "nsc": {
-      "wti": -0.021,
-      "us10y": 0.056,
-      "usdjpy": 0.144,
-      "gold": 0.068,
-      "nikkei": 0.454,
+      "usdjpy": 0.238,
+      "gold": 0.036,
+      "nikkei": 0.363,
       "nasdaq100": -0.023
     },
+    "nintendo": {
+      "wti": -0.036,
+      "us10y": 0.01,
+      "usdjpy": 0.149,
+      "gold": 0.021,
+      "nikkei": 0.396,
+      "nasdaq100": -0.012
+    },
+    "shift": {
+      "wti": 0.034,
+      "us10y": -0.005,
+      "usdjpy": 0.027,
+      "gold": 0.066,
+      "nikkei": 0.191,
+      "nasdaq100": 0.097
+    },
+    "nsc": {
+      "wti": -0.02,
+      "us10y": 0.056,
+      "usdjpy": 0.145,
+      "gold": 0.068,
+      "nikkei": 0.453,
+      "nasdaq100": -0.026
+    },
     "mitsui": {
-      "wti": 0.092,
+      "wti": 0.094,
       "us10y": 0.069,
-      "usdjpy": 0.221,
+      "usdjpy": 0.222,
       "gold": 0.13,
-      "nikkei": 0.581,
-      "nasdaq100": -0.004
+      "nikkei": 0.586,
+      "nasdaq100": -0.013
     },
     "gmo_pg": {
-      "wti": 0.012,
+      "wti": 0.016,
       "us10y": -0.041,
-      "usdjpy": -0.023,
-      "gold": 0.015,
-      "nikkei": 0.295,
-      "nasdaq100": -0.018
+      "usdjpy": -0.021,
+      "gold": 0.016,
+      "nikkei": 0.296,
+      "nasdaq100": -0.033
     },
     "sanix": {
-      "wti": 0.059,
+      "wti": 0.06,
       "us10y": 0.111,
-      "usdjpy": 0.178,
+      "usdjpy": 0.18,
       "gold": 0.018,
-      "nikkei": 0.445,
-      "nasdaq100": 0.003
+      "nikkei": 0.449,
+      "nasdaq100": 0.0
     }
   }
 }
