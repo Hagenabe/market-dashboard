@@ -1,21 +1,17 @@
 {
-  "updated_at": "2026-11-10T13:30:44+09:00",
+  "updated_at": "2026-11-11T11:36:14+09:00",
   "indicators": [
     {
       "id": "sp500",
       "name": "S&P 500",
       "name_ja": "S&P 500",
       "category": "equity",
-      "value": 7549.9399,
-      "change": 173.0801,
-      "change_pct": 2.35,
-      "week_pct": 0.11,
-      "month_pct": -3.35,
+      "value": 7520.9302,
+      "change": -29.0098,
+      "change_pct": -0.38,
+      "week_pct": -0.63,
+      "month_pct": -3.72,
       "history": [
-        {
-          "date": "2026-09-29",
-          "close": 7670.8398
-        },
         {
           "date": "2026-09-30",
           "close": 7651.54
@@ -131,6 +127,10 @@
         {
           "date": "2026-11-09",
           "close": 7549.9399
+        },
+        {
+          "date": "2026-11-10",
+          "close": 7520.9302
         }
       ]
     },
@@ -139,16 +139,12 @@
       "name": "NASDAQ 100",
       "name_ja": "NASDAQ 100",
       "category": "equity",
-      "value": 27907.625,
-      "change": 917.6348,
-      "change_pct": 3.4,
-      "week_pct": -0.29,
-      "month_pct": -9.63,
+      "value": 27740.7949,
+      "change": -166.8359,
+      "change_pct": -0.6,
+      "week_pct": -1.56,
+      "month_pct": -10.17,
       "history": [
-        {
-          "date": "2026-09-29",
-          "close": 30339.3301
-        },
         {
           "date": "2026-09-30",
           "close": 30408.5
@@ -263,7 +259,11 @@
         },
         {
           "date": "2026-11-09",
-          "close": 27907.625
+          "close": 27907.6309
+        },
+        {
+          "date": "2026-11-10",
+          "close": 27740.7949
         }
       ]
     },
@@ -273,16 +273,12 @@
       "name_ja": "全世界株(ACWI)",
       "category": "equity",
       "description": "MSCI ACWI ETF (iShares)。オルカンの背後にあるインデックスの代理指標。",
-      "value": 156.35,
-      "change": 3.98,
-      "change_pct": 2.61,
-      "week_pct": 0.33,
-      "month_pct": -2.83,
+      "value": 155.62,
+      "change": -0.73,
+      "change_pct": -0.47,
+      "week_pct": -0.16,
+      "month_pct": -3.28,
       "history": [
-        {
-          "date": "2026-09-29",
-          "close": 159.46
-        },
         {
           "date": "2026-09-30",
           "close": 158.77
@@ -398,6 +394,10 @@
         {
           "date": "2026-11-09",
           "close": 156.35
+        },
+        {
+          "date": "2026-11-10",
+          "close": 155.62
         }
       ]
     },
@@ -406,16 +406,12 @@
       "name": "Nikkei 225",
       "name_ja": "日経平均",
       "category": "equity",
-      "value": 59986.7891,
-      "change": 1211.2891,
-      "change_pct": 2.06,
-      "week_pct": -4.91,
-      "month_pct": -13.1,
+      "value": 60886.3516,
+      "change": 426.7734,
+      "change_pct": 0.71,
+      "week_pct": -2.09,
+      "month_pct": -11.8,
       "history": [
-        {
-          "date": "2026-09-28",
-          "close": 65877.6172
-        },
         {
           "date": "2026-09-29",
           "close": 65481.2695
@@ -530,7 +526,11 @@
         },
         {
           "date": "2026-11-10",
-          "close": 59986.7891
+          "close": 60459.5781
+        },
+        {
+          "date": "2026-11-11",
+          "close": 60886.3516
         }
       ]
     },
@@ -540,16 +540,12 @@
       "name_ja": "ドル円",
       "category": "fx",
       "unit": "USD/JPY",
-      "value": 157.989,
-      "change": -0.303,
-      "change_pct": -0.19,
-      "week_pct": 0.05,
-      "month_pct": -0.05,
+      "value": 158.831,
+      "change": 0.848,
+      "change_pct": 0.54,
+      "week_pct": 0.23,
+      "month_pct": 0.4,
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 157.404
-        },
         {
           "date": "2026-10-01",
           "close": 157.558
@@ -664,7 +660,11 @@
         },
         {
           "date": "2026-11-10",
-          "close": 157.989
+          "close": 157.983
+        },
+        {
+          "date": "2026-11-11",
+          "close": 158.831
         }
       ]
     },
@@ -674,16 +674,12 @@
       "name_ja": "ユーロドル",
       "category": "fx",
       "unit": "EUR/USD",
-      "value": 1.1226,
-      "change": 0.0079,
-      "change_pct": 0.7,
-      "week_pct": 0.3,
-      "month_pct": 0.11,
+      "value": 1.1168,
+      "change": -0.0054,
+      "change_pct": -0.48,
+      "week_pct": -0.35,
+      "month_pct": -0.33,
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 1.1341
-        },
         {
           "date": "2026-10-01",
           "close": 1.1327
@@ -798,7 +794,11 @@
         },
         {
           "date": "2026-11-10",
-          "close": 1.1226
+          "close": 1.1222
+        },
+        {
+          "date": "2026-11-11",
+          "close": 1.1168
         }
       ]
     },
@@ -808,16 +808,12 @@
       "name_ja": "金",
       "category": "commodity",
       "description": "金先物(USD/oz)。ドル安・地政学リスク・インフレヘッジとして機能。",
-      "value": 4122.7998,
-      "change": 47.8999,
-      "change_pct": 1.18,
-      "week_pct": 3.86,
-      "month_pct": -2.22,
+      "value": 4048.5,
+      "change": -66.0,
+      "change_pct": -1.6,
+      "week_pct": 2.74,
+      "month_pct": -3.98,
       "history": [
-        {
-          "date": "2026-09-29",
-          "close": 4179.7002
-        },
         {
           "date": "2026-09-30",
           "close": 4186.7002
@@ -932,7 +928,11 @@
         },
         {
           "date": "2026-11-09",
-          "close": 4122.7998
+          "close": 4114.5
+        },
+        {
+          "date": "2026-11-10",
+          "close": 4048.5
         }
       ]
     },
@@ -942,16 +942,12 @@
       "name_ja": "プラチナ",
       "category": "commodity",
       "description": "白金先物(USD/oz)。自動車触媒需要が主。景気敏感で金との比率が参考になる。",
-      "value": 1577.9,
-      "change": 39.7001,
-      "change_pct": 2.58,
-      "week_pct": 8.15,
-      "month_pct": -6.04,
+      "value": 1556.9,
+      "change": -4.2999,
+      "change_pct": -0.28,
+      "week_pct": 8.69,
+      "month_pct": -7.29,
       "history": [
-        {
-          "date": "2026-09-29",
-          "close": 1680.1
-        },
         {
           "date": "2026-09-30",
           "close": 1702.3
@@ -1066,7 +1062,11 @@
         },
         {
           "date": "2026-11-09",
-          "close": 1577.9
+          "close": 1561.2
+        },
+        {
+          "date": "2026-11-10",
+          "close": 1556.9
         }
       ]
     },
@@ -1076,16 +1076,12 @@
       "name_ja": "WTI原油",
       "category": "commodity",
       "unit": "USD/bbl",
-      "value": 85.93,
-      "change": -4.9,
-      "change_pct": -5.39,
-      "week_pct": -10.92,
-      "month_pct": -6.45,
+      "value": 86.56,
+      "change": -0.29,
+      "change_pct": -0.33,
+      "week_pct": -9.92,
+      "month_pct": -5.76,
       "history": [
-        {
-          "date": "2026-09-29",
-          "close": 89.38
-        },
         {
           "date": "2026-09-30",
           "close": 90.42
@@ -1200,7 +1196,11 @@
         },
         {
           "date": "2026-11-09",
-          "close": 85.93
+          "close": 86.85
+        },
+        {
+          "date": "2026-11-10",
+          "close": 86.56
         }
       ]
     },
@@ -1210,16 +1210,12 @@
       "name_ja": "ブレント原油",
       "category": "commodity",
       "unit": "USD/bbl",
-      "value": 91.75,
-      "change": -6.57,
-      "change_pct": -6.68,
-      "week_pct": -12.43,
-      "month_pct": -12.39,
+      "value": 92.32,
+      "change": -0.25,
+      "change_pct": -0.27,
+      "week_pct": -10.89,
+      "month_pct": -11.84,
       "history": [
-        {
-          "date": "2026-09-29",
-          "close": 102.59
-        },
         {
           "date": "2026-09-30",
           "close": 103.53
@@ -1334,7 +1330,11 @@
         },
         {
           "date": "2026-11-09",
-          "close": 91.75
+          "close": 92.57
+        },
+        {
+          "date": "2026-11-10",
+          "close": 92.32
         }
       ]
     },
@@ -1344,16 +1344,12 @@
       "name_ja": "天然ガス(Henry Hub)",
       "category": "energy",
       "unit": "USD/MMBtu",
-      "value": 3.217,
-      "change": 0.219,
-      "change_pct": 7.3,
-      "week_pct": 12.64,
-      "month_pct": -0.09,
+      "value": 3.308,
+      "change": 0.09,
+      "change_pct": 2.8,
+      "week_pct": 14.27,
+      "month_pct": 2.73,
       "history": [
-        {
-          "date": "2026-09-29",
-          "close": 3.011
-        },
         {
           "date": "2026-09-30",
           "close": 3.026
@@ -1468,7 +1464,11 @@
         },
         {
           "date": "2026-11-09",
-          "close": 3.217
+          "close": 3.218
+        },
+        {
+          "date": "2026-11-10",
+          "close": 3.308
         }
       ]
     },
@@ -1478,16 +1478,12 @@
       "name_ja": "VIX 恐怖指数",
       "category": "risk",
       "description": "S&P500オプションの30日間予想変動率。20以上で警戒、30以上で高恐怖域。",
-      "value": 19.92,
-      "change": -5.72,
-      "change_pct": -22.31,
-      "week_pct": -5.82,
-      "month_pct": 34.23,
+      "value": 19.46,
+      "change": -0.46,
+      "change_pct": -2.31,
+      "week_pct": -6.58,
+      "month_pct": 31.13,
       "history": [
-        {
-          "date": "2026-09-29",
-          "close": 16.04
-        },
         {
           "date": "2026-09-30",
           "close": 16.34
@@ -1603,6 +1599,10 @@
         {
           "date": "2026-11-09",
           "close": 19.92
+        },
+        {
+          "date": "2026-11-10",
+          "close": 19.46
         }
       ]
     },
@@ -1613,16 +1613,12 @@
       "category": "rates",
       "unit": "%",
       "description": "米国長期金利の基準。株式・為替・コモディティすべてに影響。",
-      "value": 4.86,
+      "value": 4.88,
       "change": 0.02,
       "change_pct": 0.41,
-      "week_pct": -1.82,
-      "month_pct": -7.25,
+      "week_pct": -0.41,
+      "month_pct": -6.87,
       "history": [
-        {
-          "date": "2026-09-25",
-          "close": 5.17
-        },
         {
           "date": "2026-09-28",
           "close": 5.24
@@ -1738,6 +1734,10 @@
         {
           "date": "2026-11-06",
           "close": 4.86
+        },
+        {
+          "date": "2026-11-09",
+          "close": 4.88
         }
       ]
     },
@@ -1748,16 +1748,12 @@
       "category": "rates",
       "unit": "%",
       "description": "FRBの政策金利期待を最も反映する指標。",
-      "value": 4.51,
+      "value": 4.56,
       "change": 0.05,
-      "change_pct": 1.12,
-      "week_pct": -2.17,
-      "month_pct": -6.04,
+      "change_pct": 1.11,
+      "week_pct": -0.44,
+      "month_pct": -5.0,
       "history": [
-        {
-          "date": "2026-09-25",
-          "close": 4.81
-        },
         {
           "date": "2026-09-28",
           "close": 4.92
@@ -1873,6 +1869,10 @@
         {
           "date": "2026-11-06",
           "close": 4.51
+        },
+        {
+          "date": "2026-11-09",
+          "close": 4.56
         }
       ]
     },
@@ -2017,7 +2017,7 @@
       "name_ja": "米10年-2年スプレッド",
       "category": "rates",
       "unit": "%",
-      "value": 0.35,
+      "value": 0.32,
       "change": -0.03,
       "change_pct": -0.03,
       "week_pct": 0.0,
